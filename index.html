@@ -21,11 +21,11 @@ background: radial-gradient(circle, rgba(255,242,248,1) 0%, rgba(163,166,222,1) 
     background: white;
     border-radius: 61% 16% 47% 64% / 29% 54% 33% 49% ;
   }
-  .canvas p{
-    color: #484972
-  }
-  @keyframes popup {
   
+  @keyframes bob {
+  0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); }  
   }
   @keyframes sleepy{
      0% {
@@ -48,7 +48,8 @@ background: radial-gradient(circle, rgba(255,242,248,1) 0%, rgba(163,166,222,1) 
     top: 49%;
     right: 84%;
     border-radius: 92% 58% 51% 81% / 49% 100% 57% 100% ;
-    animation-duration: 4s;
+    animation: bob;
+    animation-duration: 10s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
   }
@@ -60,7 +61,7 @@ background: radial-gradient(circle, rgba(255,242,248,1) 0%, rgba(163,166,222,1) 
     top: 7%;
     left: 87%;
     border-radius: 61% 67% 47% 64% / 69% 96% 33% 55% ;
-    animation: popup;
+    animation: bob;
     animation-duration: 5s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
@@ -73,7 +74,7 @@ background: radial-gradient(circle, rgba(255,242,248,1) 0%, rgba(163,166,222,1) 
     top: 7%;
     left: 60%;
     border-radius: 61% 67% 47% 64% / 69% 96% 33% 55% ;
-    animation: popup;
+    animation: bob;
     animation-duration: 5s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
@@ -86,7 +87,7 @@ background: radial-gradient(circle, rgba(255,242,248,1) 0%, rgba(163,166,222,1) 
    	top: 7%;
     left: 73.5%;
     border-radius: 61% 67% 47% 64% / 69% 96% 33% 55% ;
-    animation: popup;
+    animation: bob;
     animation-duration: 5s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
@@ -99,6 +100,10 @@ background: radial-gradient(circle, rgba(255,242,248,1) 0%, rgba(163,166,222,1) 
     top: 5%;
     border-radius: 20px 20px 20px 20px;
   }
+  .battery{
+    
+    
+  }
   .header p{
     color: #ffffff;
   }
@@ -106,21 +111,23 @@ background: radial-gradient(circle, rgba(255,242,248,1) 0%, rgba(163,166,222,1) 
     position: absolute;
     width: 9vw;
     height: 50vh;
-		background: #A79AC6;
+		background: #7378A6;;
     top: 17%;
     left: 15%;
 		border-radius: 70% 58% 51% 75% / 99% 100% 29% 29%;
-    animation-duration: 5s;
+    animation: bob;
+    animation-duration: 7s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
   }
 </style>
 <div>
   <div class="canvas"> <p>CANVAS </p></div>
-<div class="tools"> <p>TOOLS <p></div>
+  <div class="tools"> <p>TOOLS </p>p></div>
   <div class="header"> <p>#Untitled Art </p></div>
   <div class="option1"> <p>HELP </p></div>
   <div class="option2"> <p>FILES</p></div>
   <div class="option3"> <p>OPTIONS</p></div>
   <div class="colorChoice"> <p>PALETTE</p></div>
+  <div class="battery"></div>
 </div>
